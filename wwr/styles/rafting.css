@@ -1,29 +1,213 @@
-/* rafting.css */
-
-/* Define CSS variables */
+Color Variables
 :root {
-    --primary-color: #003049;
-    --secondary-color: #d62828;
-    --accent-color1: #f77f00;
-    --accent-color2: #fcbf49;
-    --text-color: #eae2b7;
-  }
-  
-  /* Style headings */
-  h1, h2, h3, h4, h5, h6 {
-    color: var(--primary-color);
-    font-family: 'Arial', sans-serif;
-  }
-  
-  /* Style paragraphs */
-  p {
-    color: var(--text-color);
-    font-family: 'Georgia', serif;
-  }
-  
-  /* Remove underlines from social media image links */
-  a img {
+    --primary-color: #D5D7E8;
+    --secondary-color: #3539BD;
+    --accent1-color: #333F;
+    --accent2-color: #D5D7E8;
+}
+
+/* General Styles */
+body {
+    font-family: 'DM Serif Text', serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: var(--secondary-color);
+    color: var(--accent1-color);
+}
+
+header img {
+    height: 50px;
+}
+
+nav a {
+    color: var(--accent1-color);
     text-decoration: none;
-    border: none;
-  }
-  
+    margin: 0 15px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.hero {
+    position: relative;
+    text-align: center;
+    color: var(--accent1-color);
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+}
+
+.hero h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 3em;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+}
+
+article {
+    padding: 20px;
+    background-color: var(--accent2-color);
+    margin: 20px;
+    border-radius: 10px;
+}
+
+article img {
+    float: right;
+    margin-right: 20px;
+    width: 200px;
+    height: auto;
+}
+
+article p {
+    text-align: justify;
+}
+
+section {
+    padding: 20px;
+    margin: 20px;
+}
+
+.adventure img {
+    width: 100%;
+    height: auto;
+    margin: 10px 0;
+}
+
+footer {
+    background-color: var(--secondary-color);
+    color: var(--accent1-color);
+    text-align: center;
+    padding: 10px;
+}
+
+footer nav a {
+    margin: 0 10px;
+}
+
+footer nav img {
+    width: 30px;
+    height: auto;
+}
+/* Color Variables
+:root {
+    --primary-color: #D5D7E8;
+    --secondary-color: #3539BD;
+    --accent1-color: #333F;
+    --accent2-color: #D5D7E8;
+}
+
+/* General Styles */
+/*body {
+    font-family: 'DM Serif Text', serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: var(--secondary-color);
+    color: var(--accent1-color);
+}
+
+header img {
+    height: 50px;
+}
+
+nav a {
+    color: var(--accent1-color);
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.hero {
+    position: relative;
+    text-align: center;
+    color: var(--accent1-color);
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+}
+
+.hero h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 3em;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+}
+
+article {
+    padding: 20px;
+    background-color: var(--accent2-color);
+    margin: 20px;
+    border-radius: 10px;
+}
+
+article img {
+    float: left;
+    margin-right: 20px;
+    width: 200px;
+    height: auto;
+}
+
+article p {
+    text-align: justify;
+}
+
+section {
+    padding: 20px;
+    margin: 20px;
+}
+
+.adventure img {
+    width: 100%;
+    height: auto;
+    margin: 10px 0;
+}
+
+footer {
+    background-color: var(--secondary-color);
+    color: var(--accent1-color);
+    text-align: center;
+    padding: 10px;
+}
+
+footer nav a {
+    margin: 0 10px;
+}
+
+footer nav img {
+    width: 30px;
+    height: auto;
+} */
+
