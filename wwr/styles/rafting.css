@@ -1,0 +1,29 @@
+/* rafting.css */
+
+/* Define CSS variables */
+:root {
+    --primary-color: #003049;
+    --secondary-color: #d62828;
+    --accent-color1: #f77f00;
+    --accent-color2: #fcbf49;
+    --text-color: #eae2b7;
+  }
+  
+  /* Style headings */
+  h1, h2, h3, h4, h5, h6 {
+    color: var(--primary-color);
+    font-family: 'Arial', sans-serif;
+  }
+  
+  /* Style paragraphs */
+  p {
+    color: var(--text-color);
+    font-family: 'Georgia', serif;
+  }
+  
+  /* Remove underlines from social media image links */
+  a img {
+    text-decoration: none;
+    border: none;
+  }
+  
