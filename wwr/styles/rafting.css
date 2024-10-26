@@ -5,15 +5,13 @@ Color Variables
     --accent1-color: #333F;
     --accent2-color: #D5D7E8;
 }
-
 /* General Styles */
 body {
-    font-family: 'DM Serif Text', serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif ;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 1em;
     background-color: var(--primary-color);
-    color: var(--secondary-color);
 }
 
 header {
@@ -28,15 +26,11 @@ header {
 header img {
     height: 50px;
 }
-header h1{
-  text-align: center;
-  font-size: 2em;
-}
-nav{
+
+nav ul{
   display: flex;
-  justify-content: space-between;
   gap: 1rem;
-  padding: 10px;
+
 }
 nav a {
     color: var(--accent1-color);
@@ -44,15 +38,25 @@ nav a {
     font-size: 18px;
     font-weight: bold;
 }
-
-nav a:hover {
-    text-decoration: underline;
+header nav a {
+  color: var(--accent1-color);
+  padding: 8px 16px;
+  border-radius: 4px;
+  transition: background-color 0.3s, text-decoration 0.3s;
+}
+header nav a:hover{
+  background-color: var(--accent2-color);
+  text-decoration: underline;
+}
+nav a:active{
+  background-color: var(--accent1-color);
+  color: var(--secondary-color);
 }
 
 .hero {
     position: relative;
     text-align: center;
-    color: var(--accent1-color);
+    color: white;
 }
 
 .hero img {
@@ -62,73 +66,70 @@ nav a:hover {
 
 .hero h1 {
     position: absolute;
-    top: 50%;
+    top: 20%;
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: 3em;
     background-color: rgba(34, 45, 198, 0.5);
     padding: 10px;
+    z-index: 2;
+    color: white;
 }
-
-article {
-    padding: 20px;
-    background-color: var(--accent2-color);
-    margin: 20px;
-    border-radius: 10px;
+.hero article {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(20, 9, 242, 0.8);
+  padding: 15px;
+  width:80%;
+  border-radius: 10px;
+  text-align: justify;
+  z-index: 1;
 }
-
-article img {
-    float: right;
-    margin-right: 20px;
-    width: 200px;
-    height: auto;
+.hero article img {
+  float: right;
+  margin-left: 15px;
+  width: 150px;
+  height: auto;
 }
-
-article p {
-    text-align: justify;
-}
-
+/* Section Styles */
 section {
-    padding: 20px;
-    margin: 20px;
+  padding: 20px;
+  margin: 20px;
 }
+
 .history{
   padding: 20px;
   margin: 20px;
   text-align: justify;
   align-items: center ;
 }
-
-.adventure img {
-    width: 100%;
-    height: auto;
-    margin: 10px 0;
-}
-
-.adventure {
+.adventure{
   padding: 20px;
   margin: 20px;
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  gap: 10px;
+  gap: 20px;
+  text-align: center;
 }
 
 .adventure figure {
-  margin: 10px;
+  margin: 0;
   display: flex;
-  flex-direction: column-reverse;
-  text-align: center;
-  justify-content: space-around;
-
-}
+  flex-direction: column;
+  text-align: center;}
 
 .adventure figcaption {
   text-align: center;
-  margin-top: 5px;
   font-size: 0.9em;
   color: var(--secondary-color);
 }
-
+.adventure img{
+  width: 100%;
+  font-size: 0.9em;
+  color: var(--secondary-color);
+}
 
 footer {
     background-color: var(--secondary-color);
@@ -139,22 +140,16 @@ footer {
     justify-content: space-between;
     align-content: center;
 }
-
-footer nav a {
-    margin: 0 10px;
-}
 footer p{
   flex:1;
   text-align:center;
   margin:0;
 } 
-footer nav{
-  display: flex;
-  gap: 10px;
+.social-links a {
+  margin: 0 5px;
 }
 
-footer nav img {
-    width: 30px;
-    height: auto;
-    
+.social-links img {
+  width: 30px;
+  height: auto;
 }
